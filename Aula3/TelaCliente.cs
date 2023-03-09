@@ -23,8 +23,8 @@ namespace Aula3
             if (txtId.Text == "") {
     
                 string sql = "insert into tb_cliente values (null, " +
-                txtNome.Text + "','" + txtCelular.Text + "','" +
-                txtCpf.Text + "', null);";
+                txtNome.Text + "','" + txtCpf.Text + "','" +
+                txtCelular.Text + "');";
 
                 if (con.Executar(sql))
                 {
