@@ -109,7 +109,11 @@ namespace Aula3
             string sql = "delete from tb_produto where prod_codigo=" + txtCodigo.Text;
             if (con.Executar(sql))
             {
-                MessageBox.Show("Excluído com suucesso")
+                MessageBox.Show("Excluído com suucesso!");
+            }
+            else
+            {
+                MessageBox.Show("Erro ao excluir!");
             }
         }
     }
